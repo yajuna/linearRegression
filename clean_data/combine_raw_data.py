@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Reorder tree data by temp with column name as new feature
-tree = pd.read_csv('./raw_temp.csv')
+tree = pd.read_csv('data/raw_temp.csv')
 tree = tree.melt(id_vars=['Date Time'], var_name='Temperature Source', value_name='Temperature')
 # Format the date time column and set as index
 tree['Date Time'] = pd.to_datetime(tree['Date Time'], format='%m/%d/%Y %H:%M')
@@ -9,7 +9,7 @@ tree.set_index('Date Time', inplace=True)
 print(tree)
 
 # Set the date time as a pd.datetime column and to the index
-weather = pd.read_csv('./raw_weather.csv')
+weather = pd.read_csv('data/raw_weather.csv')
 weather['datetime'] = pd.to_datetime(weather['datetime'])
 weather.set_index('datetime', inplace=True)
 # Reindex weather to match the tree data frame

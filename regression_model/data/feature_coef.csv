@@ -1,0 +1,14 @@
+,Feature,Coefficients
+0,depth,0.08559431610018968
+1,height,-0.07862150987088797
+2,Anemometer;wind_speed;Avg (m/s),-0.17374680530752448
+3,Wind Vane TMR;wind_direction;Avg (°),0.006586036828958251
+4,Hygro/Thermo;humidity;Avg (%),-0.9067386035818417
+5,Hygro/Thermo;temperature;Avg (°C),0.20362563984993348
+6,Barometer;air_pressure;Avg (hPa),-0.20090166625270703
+7,DNI (Direct Normal Irradiance) Pyrheliometer;solar_DNI;Avg (W/m²),-0.3619503853390191
+8,north,0.19390055225996553
+9,west,0.1278980913113681
+10,east,0.19264049212776008
+11,hour,0.2492598440229992
+12,day,-0.21864671228367355
